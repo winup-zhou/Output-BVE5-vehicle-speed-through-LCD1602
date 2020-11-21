@@ -1,2 +1,4 @@
-# Output-BVE5-vehicle-speed-through-LCD1602
-Output BVE5 vehicle speed through LCD1602 and Serial port
+# 通过LCD1602输出BVE车辆速度等信息
+制作中
+感谢ED67900-5氏制作的シリアルポート出力プラグイン，本项目使用了该插件
+该插件公开的位置： https://twitter.com/ED67900_5/status/1112336446994542592
