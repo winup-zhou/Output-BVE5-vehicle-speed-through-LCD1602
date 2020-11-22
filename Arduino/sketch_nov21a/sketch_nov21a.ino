@@ -1,21 +1,20 @@
 String comdata = "";
 int numdata[6] = {0}, mark = 0;
 
-char trainspeed = 0;
+char trainspeed = 0;  //测试用空变量
 #include <Wire.h> 
-#include <LiquidCrystal_I2C.h>
-LiquidCrystal_I2C lcd(0x3F,16,2);
+#include <LiquidCrystal_I2C.h>  //引用LCD1602库
+LiquidCrystal_I2C lcd(0x3F,16,2);  //设定IIC通讯地址为0x3F，LCD规格为16*2
 void setup() {
   // put your setup code here, to run once:
-  Serial.begin(19200,SERIAL_8N1);
-  lcd.init();  
-  lcd.backlight();  
+  Serial.begin(19200,SERIAL_8N1);  //设定波特率为19200，串口参数为无校验位，停止位一位，数据位八位
+  lcd.init();  //LCD启动
+  lcd.backlight();  //LCD背光开
 }
 
 void loop() {
         int j = 0;
-     
-      //不断循环检测串口缓存，一个个读入字符串，
+        //不断循环检测串口缓存，一个个读入字符串，
       while (Serial.available() > 0)
       {
       //读入之后将字符串，串接到comdata上面。
@@ -49,7 +48,7 @@ void loop() {
         for(int i = 0; i < 6; i++)
         {
         lcd.setCursor(10,0);
-        lcd.print(numdata[i]);
+        lcd.print(numdata[i]);//输出内容只有第二位正常，正在调试
         lcd.setCursor(0,0);
         lcd.print("Speed:");
         numdata[i] = 0;
