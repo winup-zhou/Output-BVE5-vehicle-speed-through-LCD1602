@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<OutputInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PortNum>10</PortNum>
+  <BaudRate>19200</BaudRate>
+  <Parity>None</Parity>
+  <StopBits>One</StopBits>
+  <DataBits>8</DataBits>
+  <Debug>true</Debug>
+  <outputInfoDataList>
+    <OutputInfoData>
+      <infoId>1</infoId>
+      <Pow>0</Pow>
+      <Digit>2</Digit>
+      <Base>D</Base>
+      <Value />
+      <PanelNum>0</PanelNum>
+    </OutputInfoData>
+  </outputInfoDataList>
+</OutputInfo>
